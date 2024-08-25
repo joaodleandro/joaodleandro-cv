@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "This repository contains the source code and assets for my personal portfolio.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass static/scss/style.scss:static/css/style.css",
+    "sass-no-map": "sass static/scss/styles.scss static/css/styles.css --no-source-map",
+    "watch": "sass --watch static/scss:static/css",
+    "build": "npm run sass"
+  },
+  "keywords": [
+    "bootstrap",
+    "sass",
+    "bootstrap-icons"
+  ],
+  "author": "João Leandro",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.3.0",
+    "bootstrap-icons": "^1.10.3"
+  },
+  "devDependencies": {
+    "sass": "^1.55.0"
+  }
+}
