@@ -1,0 +1,23 @@
+// header.scss
+
+header {
+    position: relative;
+    top: 40px;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 24px;
+    z-index: 1;
+}
+
+header .nav {
+    position: absolute;
+    right: 62px;
+}
+
+header .nav-item .nav-link {
+    color: $senary-color;
+}
+
+header .nav-item a.nav-link:hover {
+    color: darken($senary-color, 10%);
+}

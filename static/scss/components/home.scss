@@ -1,19 +1,71 @@
 // home.scss
 
 .home {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
     height: 100vh;
-    background-image: url('/static/img/home.jpg');
-    background: cover;
+    overflow: hidden;
+    position: relative;
+}
 
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(6, 20, 27, 0.8);
-    }
+.home img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.home .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 20, 27, 0.7);
+    z-index: -1;
+}
+
+.home .name {
+    margin: 0px;
+    line-height: 0.8;
+    font-size: 96px;
+    font-weight: 500;
+    color: $senary-color;
+}
+
+.home .surname {
+    margin-left: -6px;
+    line-height: 0.8;
+    font-size: 128px;
+    font-weight: 900;
+    color: $senary-color;
+}
+
+.home p.title {
+    margin: 0px;
+    line-height: 0.8;
+    letter-spacing: 5px;
+    font-size: 64px;
+    font-weight: 400;
+    color: $senary-color;
+}
+
+.home .row.socials {
+    position: absolute;
+    right: 80px;
+    bottom: 40px;
+}
+
+.home .row.socials i {
+    font-size: 60px;
+    color: $senary-color;
+}
+
+.home .row.socials i:hover {
+    color: darken($senary-color, 10%);
 }

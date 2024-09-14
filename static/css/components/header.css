@@ -1,9 +1,9 @@
 /* Error: Undefined variable.
  *    ,
- * 38 |     color: $senary-color;
+ * 18 |     color: $senary-color;
  *    |            ^^^^^^^^^^^^^
  *    '
- *   static\scss\components\home.scss 38:12  root stylesheet */
+ *   static\scss\components\header.scss 18:12  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 38 \2502      color: $senary-color;\d\a    \2502             ^^^^^^^^^^^^^\a    \2575 \a   static\\scss\\components\\home.scss 38:12  root stylesheet";
+  content: "Error: Undefined variable.\a    \2577 \a 18 \2502      color: $senary-color;\d\a    \2502             ^^^^^^^^^^^^^\a    \2575 \a   static\\scss\\components\\header.scss 18:12  root stylesheet";
 }
